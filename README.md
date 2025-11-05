@@ -1,41 +1,80 @@
 # LearnX
 
-Lightweight Next.js project for learning and documenting features. This repository contains a Next.js app with example pages and a roadmap for the project.
+LearnX is a community-driven platform where anyone can learn anything in simple, structured steps. Users pick a topic (any category) or create their own, and AI automatically generates a complete learning track with modules, lessons, and small actionable tasks.
 
-## Quick start (Windows PowerShell)
-
-1. Install dependencies:
-
-```powershell
-npm install
-```
-
-2. Run the dev server:
-
-```powershell
-npm run dev
-```
-
-3. Open http://localhost:3000 in your browser.
-
-Notes:
-- This project uses Next.js with TypeScript. See `package.json` and `tsconfig.json` for config.
-- If you use `pnpm` or `yarn`, replace `npm` commands accordingly.
-
-## Project structure (top-level)
-
-- `app/` - Next.js app directory (routes + pages)
-- `public/` - static assets
-- `next.config.ts`, `tsconfig.json`, `package.json` - project configs
-
-## Contributing
-
-Please read `CONTRIBUTING.md` for contribution guidelines, branch/PR workflow, and code style.
-
-## License
-
-This repository is licensed under the MIT License — see the `LICENSE` file for details.
+<p align="left">
+  <img src="https://img.shields.io/badge/Framework-Next.js-black" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-blue" />
+  <img src="https://img.shields.io/badge/Styling-TailwindCSS-38bdf8" />
+  <img src="https://img.shields.io/badge/Animations-FramerMotion-ff4154" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
 
 ---
 
-If you meant a different license than MIT (you mentioned "amd license"), tell me which license you prefer (Apache-2.0, GPL-3.0, etc.) and I’ll update the `LICENSE` file.
+## Problem
+
+Learning on the internet is scattered.
+YouTube video series, blogs, courses, docs — everything is everywhere. Most people struggle because they don’t get a clear step-by-step path to follow. They waste time deciding *what to learn next*.
+
+## Solution
+
+LearnX converts any topic into a structured learning journey.
+Just type the topic → AI generates lessons → users follow each step and track progress. This removes confusion and makes learning simpler, cleaner, and faster.
+
+---
+
+## Quick Start (Windows PowerShell)
+
+```powershell
+npm install
+npm run dev
+```
+
+Now open → [http://localhost:3000](http://localhost:3000)
+
+---
+
+## Tech Stack
+
+* Next.js (App Router)
+* Tailwind CSS
+* TypeScript
+* Framer Motion
+
+---
+
+## Core Pages
+
+| Page                   | Link                        |
+| ---------------------- | --------------------------- |
+| **Home**               | `/`                         |
+| **Roadmap**            | `/roadmap`                  |
+| **GitHub Repo**        | **https://github.com/tilakjain619/LearnX** |
+| **Contributing Guide** | `CONTRIBUTING.md`           |
+| **License**            | `LICENSE`                   |
+
+---
+
+## Project Structure
+
+```
+app/              → routes + pages
+public/           → static assets
+next.config.ts    → next config
+tsconfig.json     → ts config
+package.json      → dependencies
+```
+
+---
+
+## Contributing
+
+PRs and ideas are welcome!
+Please check → [`CONTRIBUTING.md`](./CONTRIBUTING.md) before submitting.
+
+---
+
+## License
+
+MIT — see [`LICENSE`](./LICENSE) for details.
