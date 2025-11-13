@@ -15,49 +15,49 @@ const ROADMAP: {
   phase: "Planned" | "In Progress" | "Shipped";
   tags?: string[];
 }[] = [
-  {
-    id: 1,
-    title: "AI topic → auto lessons (v1)",
-    desc: "Type a topic and instantly generate a structured learning path with modules and lesson summaries.",
-    phase: "In Progress",
-    tags: ["AI", "Generator"],
-  },
-  {
-    id: 2,
-    title: "Category discovery",
-    desc: "Curated categories like Tech, Finance, Cooking, Fitness to browse community-created topics.",
-    phase: "Planned",
-    tags: ["UX", "Discovery"],
-  },
-  {
-    id: 3,
-    title: "Learning progress tracking",
-    desc: "Mark lessons done, resume where you left off, and see completion % for each topic.",
-    phase: "Planned",
-    tags: ["Progress"],
-  },
-  {
-    id: 4,
-    title: "Quizzes & mini-assignments",
-    desc: "Auto-generate quick checks for lessons with instant feedback.",
-    phase: "Planned",
-    tags: ["Assessment"],
-  },
-  {
-    id: 5,
-    title: "Public paths & sharing",
-    desc: "Publish a path, share a link, and let others learn step-by-step.",
-    phase: "Planned",
-    tags: ["Community"],
-  },
-  {
-    id: 6,
-    title: "Streaks & leaderboard",
-    desc: "Daily learning streaks with a friendly leaderboard to encourage consistency.",
-    phase: "Planned",
-    tags: ["Gamification"],
-  },
-];
+    {
+      id: 1,
+      title: "AI topic → auto lessons (v1)",
+      desc: "Type a topic and instantly generate a structured learning path with modules and lesson summaries.",
+      phase: "In Progress",
+      tags: ["AI", "Generator"],
+    },
+    {
+      id: 2,
+      title: "Category discovery",
+      desc: "Curated categories like Tech, Finance, Cooking, Fitness to browse community-created topics.",
+      phase: "Planned",
+      tags: ["UX", "Discovery"],
+    },
+    {
+      id: 3,
+      title: "Learning progress tracking",
+      desc: "Mark lessons done, resume where you left off, and see completion % for each topic.",
+      phase: "Planned",
+      tags: ["Progress"],
+    },
+    {
+      id: 4,
+      title: "Quizzes & mini-assignments",
+      desc: "Auto-generate quick checks for lessons with instant feedback.",
+      phase: "Planned",
+      tags: ["Assessment"],
+    },
+    {
+      id: 5,
+      title: "Public paths & sharing",
+      desc: "Publish a path, share a link, and let others learn step-by-step.",
+      phase: "Planned",
+      tags: ["Community"],
+    },
+    {
+      id: 6,
+      title: "Streaks & leaderboard",
+      desc: "Daily learning streaks with a friendly leaderboard to encourage consistency.",
+      phase: "Planned",
+      tags: ["Gamification"],
+    },
+  ];
 
 // Visual helpers
 const phaseBadge = (phase: "Planned" | "In Progress" | "Shipped") => {
@@ -93,7 +93,7 @@ export default function RoadmapPage() {
           <div>
             <h1 className="text-3xl font-semibold tracking-tight">Product Roadmap</h1>
             <p className="mt-2 max-w-2xl text-sm text-zinc-400">
-              A living, visual timeline of what we're planning, building, and shipping. No dates — just momentum.
+              A living, visual timeline of what we&apos;re planning, building, and shipping. No dates — just momentum.
             </p>
           </div>
           <a
@@ -142,9 +142,8 @@ export default function RoadmapPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.35, ease: "easeOut" }}
-                  className={`group relative w-full md:w-[calc(50%-2rem)] ${
-                    isLeft ? "md:pr-10 md:ml-0 md:mr-auto" : "md:pl-10 md:mr-0 md:ml-auto"
-                  }`}
+                  className={`group relative w-full md:w-[calc(50%-2rem)] ${isLeft ? "md:pr-10 md:ml-0 md:mr-auto" : "md:pl-10 md:mr-0 md:ml-auto"
+                    }`}
                 >
                   <article
                     className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 shadow-sm backdrop-blur transition-colors group-hover:border-zinc-700"
