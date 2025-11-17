@@ -1,5 +1,16 @@
 # LearnX
 
+## Table of Contents
+
+- [Problem](#problem)
+- [Solution](#solution)
+- [Quick Start (Windows PowerShell)](#quick-start-windows-powershell)
+- [Tech Stack](#tech-stack)
+- [Core Pages](#core-pages)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
 LearnX is a community-driven platform where anyone can learn anything in simple, structured steps. Users pick a topic (any category) or create their own, and AI automatically generates a complete learning track with modules, lessons, and small actionable tasks.
 
 <p align="left">
@@ -29,7 +40,7 @@ Just type the topic → AI generates lessons → users follow each step and trac
 ```powershell
 npm install
 npm run dev
-```
+````
 
 Now open → [http://localhost:3000](http://localhost:3000)
 
@@ -46,13 +57,13 @@ Now open → [http://localhost:3000](http://localhost:3000)
 
 ## Core Pages
 
-| Page                   | Link                        |
-| ---------------------- | --------------------------- |
-| **Home**               | `/`                         |
-| **Roadmap**            | `/roadmap`                  |
-| **GitHub Repo**        | **https://github.com/tilakjain619/LearnX** |
-| **Contributing Guide** | `CONTRIBUTING.md`           |
-| **License**            | `LICENSE`                   |
+| Page                   | Link                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------ |
+| **Home**               | `/`                                                                                  |
+| **Roadmap**            | `/roadmap`                                                                           |
+| **GitHub Repo**        | **[https://github.com/tilakjain619/LearnX](https://github.com/tilakjain619/LearnX)** |
+| **Contributing Guide** | `CONTRIBUTING.md`                                                                    |
+| **License**            | `LICENSE`                                                                            |
 
 ---
 
