@@ -135,7 +135,7 @@ Start by checking open issues:
 ## Learning Flow Diagram (Simple)
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User enters topic] --> B[AI analyzes topic]
     B --> C[Generate modules]
     C --> D[Generate lessons & tasks]
