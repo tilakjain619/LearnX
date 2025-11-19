@@ -1,11 +1,13 @@
 "use client";
 
+
+import { useEffect } from "react";
 import Link from "next/link";
 import { Rocket, Github, Map } from "lucide-react";
-import Footer from "./footer/page";
+
+import Footer from "@/components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
 
 export default function HomePage() {
   useEffect(() => {
