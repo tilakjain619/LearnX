@@ -30,30 +30,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-// app/layout.tsx
-import type { Metadata } from "next";
-import { ThemeProvider } from "./components/theme-provider";
-import { ThemeToggle } from "./components/theme-toggle";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "LearnX",
-  description: "Your learning platform",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
-        <ThemeProvider>
-          <ThemeToggle />
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  );
-}
