@@ -33,7 +33,12 @@ export default function HomePage() {
           >
             <Map className="h-4 w-4" /> Product Roadmap
           </Link>
-
+        <Link
+          href="/roadmaps"
+          className="inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm hover:bg-zinc-800"
+        >
+          <Map className="h-4 w-4" /> Curated Roadmaps
+        </Link>
           <a
             href="https://github.com/tilakjain619/LearnX"
             target="_blank"
@@ -41,6 +46,12 @@ export default function HomePage() {
           >
             <Github className="h-4 w-4" /> GitHub
           </a>
+        {/* <Link
+          href="/roadmaps"
+          className="inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm hover:bg-zinc-800"
+        >
+          <Map className="h-4 w-4" /> Curated Roadmaps
+        </Link> */}
 
           <Link
             href="/create"
