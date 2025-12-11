@@ -61,7 +61,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/create"
+              href="/learnpath-generator"
               className="text-gray-700 dark:text-gray-200 hover:text-white"
             >
               Create
@@ -127,7 +127,7 @@ export default function Navbar() {
                 Home
               </Link>
 
-              <Link href="/create" className="block px-3 py-2 rounded-md">
+              <Link href="/learnpath-generator" className="block px-3 py-2 rounded-md">
                 Create
               </Link>
 

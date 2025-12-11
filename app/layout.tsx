@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${syne.variable} ${spaceGrotesk.variable} font-sans antialiased min-h-screen flex flex-col bg-white dark:bg-black transition-colors duration-300`}
+        className={`${outfit.variable} ${syne.variable} ${spaceGrotesk.variable} font-sans antialiased min-h-screen flex flex-col bg-black text-gray-100 transition-colors duration-300`}
       >
         <Cursor />
         <Navbar />
