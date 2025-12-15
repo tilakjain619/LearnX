@@ -39,7 +39,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 bg-zinc-900">
+    <header className="sticky top-0 z-40 bg-white dark:bg-zinc-900">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -55,14 +55,15 @@ export default function Navbar() {
           <div className="hidden sm:flex sm:items-center sm:gap-6">
             <Link
               href="/"
-              className="text-gray-700 dark:text-gray-200 hover:text-white"
+              className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+
             >
               Home
             </Link>
 
             <Link
               href="/create"
-              className="text-gray-700 dark:text-gray-200 hover:text-white"
+              className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
             >
               Create
             </Link>
@@ -70,7 +71,7 @@ export default function Navbar() {
             {/* Product Roadmap (existing) */}
             <Link
               href="/roadmap"
-              className="text-gray-700 dark:text-gray-200 hover:text-white"
+              className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
             >
               Product Roadmap
             </Link>
@@ -78,7 +79,7 @@ export default function Navbar() {
             {/* NEW: Learning Roadmaps */}
             <Link
               href="/roadmaps"
-              className="text-gray-700 dark:text-gray-200 hover:text-white"
+              className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
             >
               Curated Roadmaps
             </Link>
@@ -87,7 +88,7 @@ export default function Navbar() {
               href="https://github.com/tilakjain619/LearnX"
               target="_blank"
               rel="noreferrer"
-              className="text-gray-700 dark:text-gray-200 hover:text-white"
+              className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
             >
               GitHub
             </a>
@@ -98,12 +99,16 @@ export default function Navbar() {
             <button
               aria-label="toggle theme"
               onClick={toggleTheme}
-              className="p-2 rounded-md hover:bg-gray-800 text-white"
+              className="p-2 rounded-md
+    bg-gray-200 dark:bg-gray-900
+    text-gray-900 dark:text-white
+    hover:bg-gray-300 dark:hover:bg-gray-800
+    transition-colors duration-200"
             >
               {theme === "dark" ? (
-                <Sun size={18} className="text-white" />
+                <Sun size={18}/>
               ) : (
-                <Moon size={18} className="text-white" />
+                <Moon size={18} />
               )}
             </button>
 
@@ -123,7 +128,7 @@ export default function Navbar() {
         {open && (
           <div className="sm:hidden mt-2 pb-4 border-t border-gray-200 dark:border-gray-800">
             <div className="flex flex-col gap-2 px-2">
-              <Link href="/" className="block px-3 py-2 rounded-md">
+              <Link href="/"  className="block px-3 py-2 rounded-md">
                 Home
               </Link>
 
