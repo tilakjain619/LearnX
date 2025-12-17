@@ -69,7 +69,7 @@ export default function HomePage() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/create">
+            <Link href="/learnpath-generator">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
