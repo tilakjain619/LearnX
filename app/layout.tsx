@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Cursor from "@/components/Cursor";
+import Providers from "@/components/Providers";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -31,12 +32,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${outfit.variable} ${syne.variable} ${spaceGrotesk.variable} font-sans antialiased min-h-screen flex flex-col bg-black text-gray-100 transition-colors duration-300`}
       >
-        <Cursor />
-        <Navbar />
-        <div className="flex-grow">
-          {children}
-        </div>
-        <Footer />
+        <Providers>
+          <Cursor />
+          <Navbar />
+          <div className="flex-grow">
+            {children}
+          </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

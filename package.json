@@ -12,11 +12,13 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "aos": "^2.3.4",
+    "bcryptjs": "^3.0.3",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.552.0",
     "mongoose": "^9.0.1",
     "next": "16.0.10",
+    "next-auth": "^5.0.0-beta.30",
     "openai": "^6.10.0",
     "react": "19.2.1",
     "react-dom": "19.2.1",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/aos": "^3.0.7",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
