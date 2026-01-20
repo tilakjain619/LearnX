@@ -216,7 +216,7 @@ export default function Navbar() {
                 </>
               ) : (
                 <>
-                  <Link href="/login" className="block px-3 py-2 rounded-md">
+                  <Link href="/signin" className="block px-3 py-2 rounded-md">
                     Sign in
                   </Link>
                   <Link href="/signup" className="block px-3 py-2 rounded-md bg-zinc-900 dark:bg-white text-white dark:text-black">

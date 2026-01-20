@@ -47,11 +47,28 @@ npm run dev
 
 Now open → [http://localhost:3000](http://localhost:3000)
 
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_nextauth_secret_key
+NEXTAUTH_URL=http://localhost:3000
+```
+
+**Note:** Generate a secure `NEXTAUTH_SECRET` by running:
+```bash
+openssl rand -base64 32
+```
+
 ---
 
 ## Tech Stack
 
 * Next.js (App Router)
+* NextAuth.js v5 (Authentication)
+* MongoDB + Mongoose (Database)
 * Tailwind CSS
 * TypeScript
 * Framer Motion
@@ -63,6 +80,9 @@ Now open → [http://localhost:3000](http://localhost:3000)
 | Page                   | Link                                                                                 |
 | ---------------------- | ------------------------------------------------------------------------------------ |
 | **Home**               | `/`                                                                                  |
+| **Sign n**             | `/signin`                                                                             |
+| **Sign Up**            | `/signup`                                                                            |
+| **Profile**            | `/profile` (Protected - requires authentication)                                    |
 | **Roadmap**            | `/roadmap`                                                                           |
 | **GitHub Repo**        | **[https://github.com/tilakjain619/LearnX](https://github.com/tilakjain619/LearnX)** |
 | **Contributing Guide** | `CONTRIBUTING.md`                                                                    |
@@ -105,8 +125,11 @@ Each module shows completion status so learners always know what to do next.
 
 ## Feature Status
 
-| Feature                              | Status        | Notes |
-|--------------------------------------|--------------|-------|
+| Feature                              | Status         | Notes |
+|--------------------------------------|----------------|-------|
+| User Authentication                  | ✅ Complete    | Email/password signup, signin, logout, session management |
+| User Profile Management              | ✅ Complete    | View and update profile (name, avatar) |
+| Protected Routes                     | ✅ Complete    | Middleware protection for authenticated pages |
 | AI topic → auto lessons (v1)         | 🚧 In Progress | Type a topic and generate structured modules & lessons (v1) |
 | Category discovery                   | 🔜 Planned     | Curated categories (Tech, Finance, etc.) |
 | Learning progress tracking           | 🔜 Planned     | Mark lessons done, resume where left off, completion % |

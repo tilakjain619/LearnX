@@ -6,7 +6,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { Loader2, AlertCircle } from "lucide-react";
 
-export default function LoginPage() {
+export default function SigninPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -36,7 +36,7 @@ export default function LoginPage() {
         router.refresh();
       }
     } catch (err: any) {
-      setError(err.message || "An error occurred during login");
+      setError(err.message || "An error occurred during signin");
       setIsLoading(false);
     }
   };
