@@ -62,11 +62,28 @@ NEXTAUTH_URL=http://localhost:3000
 openssl rand -base64 32
 ```
 
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_nextauth_secret_key
+NEXTAUTH_URL=http://localhost:3000
+```
+
+**Note:** Generate a secure `NEXTAUTH_SECRET` by running:
+```bash
+openssl rand -base64 32
+```
+
 ---
 
 ## Tech Stack
 
 * Next.js (App Router)
+* NextAuth.js v5 (Authentication)
+* MongoDB + Mongoose (Database)
 * NextAuth.js v5 (Authentication)
 * MongoDB + Mongoose (Database)
 * Tailwind CSS
